@@ -11,7 +11,7 @@ class unitConvertor:
         self.label = tk.Label(self.root, text="Universal Unit Convertor", font=('Arial', 18))
         self.label.pack(padx=20, pady=20)
 
-        self.options = ["Meters", "Kilometers", "Feet", "Miles", "Celsius", "Fahrenheit"]
+        self.options = ["Meters", "Kilometers", "Feet", "Miles", "Celsius", "Fahrenheit", "Kilograms", "Grams"]
 
         self.dropdown_frame = tk.Frame(self.root)
         self.dropdown_frame.pack(padx=10, pady=1)
@@ -60,6 +60,8 @@ class unitConvertor:
             self.from_simple = ""
             self.to_simple = ""
 
+            # Map variables to the library's names
+
             if self.from_unit == "Meters":
                  self.from_simple = "m"
             elif self.from_unit == "Kilometers":
@@ -72,6 +74,10 @@ class unitConvertor:
                 self.from_simple = "°C"
             elif self.from_unit == "Fahrenheit":
                 self.from_simple = "°F"
+            elif self.from_unit == "Kilograms":
+                self.from_simple = "kg"
+            elif self.from_unit == "Grams":
+                self.from_simple = "g"
 
             if self.to_unit == "Meters":
                  self.to_simple = "m"
@@ -85,6 +91,10 @@ class unitConvertor:
                 self.to_simple = "°C"
             elif self.to_unit == "Fahrenheit":
                 self.to_simple = "°F"
+            elif self.to_unit == "Kilograms":
+                self.to_simple = "kg"
+            elif self.to_unit == "Grams":
+                self.to_simple = "g"
 
             if not self.number_value:
                  self.output_label.config(text="Please enter a value", fg="red")
@@ -100,7 +110,6 @@ class unitConvertor:
 
             except Exception:
                  self.output_label.config(text="Incompatible unit conversion!", fg="red")
-
-
-
+                 return
+            
 unitConvertor()
