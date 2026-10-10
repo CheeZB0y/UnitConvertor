@@ -2,6 +2,7 @@
 
 - 📏 Converts between length units
 - 🔥 Converts between temperature units
+- 🏋️ Converts between weight units
 
 # Lets you convert between all kinds of units fast and easy
 
