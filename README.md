@@ -6,7 +6,7 @@
 
 # Lets you convert between all kinds of units fast and easy
 
-# Built with Tkinter and unit_converter libraries
+Built with Tkinter and unit_converter libraries
 
 # Instructions
 
@@ -15,4 +15,4 @@
 - Choose what value you want to convert
 - Press 'Convert'
 
-# Made by Amit Sahaf
+Made by Amit Sahaf

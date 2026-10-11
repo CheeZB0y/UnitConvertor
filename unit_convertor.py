@@ -6,7 +6,8 @@ class unitConvertor:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Universal Unit Convertor")
-        self.root.geometry("340x350")
+        self.root.geometry("340x300")
+        self.root.iconbitmap("hammer_3341.ico")
 
         self.label = tk.Label(self.root, text="Universal Unit Convertor", font=('Arial', 18))
         self.label.pack(padx=20, pady=20)
@@ -25,7 +26,7 @@ class unitConvertor:
 
         # To Text
 
-        self.to_text = tk.Label(self.dropdown_frame, text="TO")
+        self.to_text = tk.Label(self.dropdown_frame, text="→", font=('Arial', 24))
         self.to_text.grid(row=0, column=1, padx=5, pady=5)
 
         # Second Dropdown
